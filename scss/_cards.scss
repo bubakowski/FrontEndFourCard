@@ -1,0 +1,53 @@
+@media screen and(min-width:769px) {
+	.cards {
+		@include flex(center, center);
+		flex-direction: row;
+		.mid {
+			display: flex;
+			flex-direction: column;
+			div {
+				margin: 1vw 0;
+			}
+		}
+		.side {
+			margin: 0 2vw;
+		}
+		.card {
+			height: 30vh;
+			width: 27vw;
+			box-shadow: 0px 7px 10px 4px rgba(1, 68, 68, 0.096);
+			background-color: white;
+			border-radius: 7px;
+			display: block;
+			padding: 2.5vw;
+			position: relative;
+			img {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				transform: translate(-50%, -50%);
+			}
+		}
+		h3 {
+			color: $veryDarkBlue;
+			margin-bottom: 2%;
+		}
+		p {
+			color: $grayishBlue;
+		}
+	}
+    
+}
+
+.cyan {
+	border-top: 6px solid $cyan;
+}
+.red {
+	border-top: 6px solid $red;
+}
+.orange {
+	border-top: 6px solid $orange;
+}
+.blue {
+	border-top: 6px solid $blue;
+}
